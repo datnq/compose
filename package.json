@@ -1,10 +1,11 @@
 {
   "name": "@datnq/compose",
-  "version": "1.0.0",
-  "main": "lib/index.js",
+  "version": "1.0.1",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx babel src --out-dir lib",
+    "prepublish": "npm run build",
     "start": "npx babel src --watch --out-dir lib"
   },
   "keywords": [
@@ -20,10 +21,11 @@
     "url": "https://github.com/datnq/compose/issues"
   },
   "homepage": "https://github.com/datnq/compose#readme",
-  "description": "",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5"
-  }
+  },
+  "dependencies": {},
+  "description": ""
 }
