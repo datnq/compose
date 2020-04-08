@@ -1,0 +1,29 @@
+{
+  "name": "@datnq/compose",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel src --out-dir lib",
+    "start": "npx babel src --watch --out-dir lib"
+  },
+  "keywords": [
+    "compose"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datnq/compose.git"
+  },
+  "author": "Joey Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datnq/compose/issues"
+  },
+  "homepage": "https://github.com/datnq/compose#readme",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5"
+  }
+}
