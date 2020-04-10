@@ -18,24 +18,24 @@ npm install --save @datnq/compose
 
 **Compose**
 
-```js
+````js
 import { compose } from '@datnq/compose'
 
-const fn1 = args => {
-  // TODO: do things to return updated args
+const fn1 = arg => {
+  // TODO: do things to return updated `arg`
   // ...
 
-  return args
+  return arg
 }
-const fn2 = args => {
-  // TODO: do things to return updated args
+const fn2 = arg => {
+  // TODO: do things to return updated `arg`
   // ...
 
-  return args
+  return arg
 }
 
-compose(fn1, fn2)(args)
-```
+compose(fn1, fn2)(arg)
+```d
 
 **Chain**
 
@@ -57,7 +57,7 @@ const fn2 = (args, next) => {
 }
 
 chain(fn1, fn2)(args)
-```
+````
 
 ## License
 

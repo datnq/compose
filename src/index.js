@@ -1,10 +1,9 @@
-const compose = (...fns) => (...args) =>
-  fns.reduceRight((arg, fn) => fn(arg), args)
+const compose = (...fns) => arg => fns.reduceRight((a, f) => f(a), arg)
 
 const chain = (...fns) => (...args) => {
   const run = fn => {
     if (fn) {
-      fn(args, () => run(fns.shift()))
+      fn(...args, () => run(fns.shift()))
     }
   }
   run(fns.shift())
