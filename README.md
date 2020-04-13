@@ -18,7 +18,7 @@ npm install --save @datnq/compose
 
 **Compose**
 
-````js
+```js
 import { compose } from '@datnq/compose'
 
 const fn1 = arg => {
@@ -34,8 +34,9 @@ const fn2 = arg => {
   return arg
 }
 
+// fn1 and fn2 have the same argument
 compose(fn1, fn2)(arg)
-```d
+```
 
 **Chain**
 
@@ -56,6 +57,8 @@ const fn2 = (args, next) => {
   next()
 }
 
+
+// fn1 and fn2 have the same argument
 chain(fn1, fn2)(args)
 ````
 
